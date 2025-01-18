@@ -13,73 +13,177 @@
         </header>
         <nav>
             <a href="index.html">Home</a><br>
-            <a href="CV.html">CV</a><br>
+            <a href="CV.html" class="current">CV</a><br>
             <a href="projects/index.html">Projects</a><br>
             <a href="contact/index.html">Contact</a><br>
             <a href="https://github.com/youngpark1516" target="_blank">Profile</a>
         </nav>
-        <article>
+
+
+        <article class="name">
             <header>    
-                <h2>Personal Information</h2>
+                <h2>Chanyoung Park</h2>
             </header>
-            <p>Name: Chanyoung Park</p>
-            <p>Email: chp026@ucsd.edu</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: UCSD</p>
-        </article>
-
-        <article>
-            <header>
-                <h2>Education</h2>
-            </header>
-            <section>
-                <header>
-                    <h3>Bachelor of Science in Data Science</h3>
-                </header>
-                <p>University of California San Diego</p>
-                <time datetime="2023-09">September 2023</time> - <time datetime="2027-05">May 2027</time>
+            <section class="personalInfo">
+                <p>chp026@ucsd.edu</p>
+                <p>(123) 456-7890</p>
+                <p>9450 Gilman Drive</p>
             </section>
         </article>
 
+
         <article>
             <header>
-                <h2>Professional Experience</h2>
+                <h2 class="content">Academics</h2>
             </header>
             <section>
                 <header>
-                    <h3>Intern</h3>
+                    <h4>University of California San Diego</h4>
                 </header>
-                <p>Company: SoftwareDevelopingCompany</p>
-                <time datetime="2024-06">June 2024</time> - <time datetime="2024-12">December 2024</time>
+                <p class="date"><time datetime="2023-09">September 2023</time> - <time datetime="2027-05">May 2027</time></p>
+                <p>B.S. in Data Science</p>
+                
+            </section>
+        </article>
+
+
+        <article>
+            <header>
+                <h2 class="content">Research or Project-Based Experiences</h2>
+            </header>
+            <section>
+                <header>
+                    <h4>IEEE QUARTERLY GROUP PROJECT - SPEECH SENTIMENT ANALYSIS</h4>
+                    <p class="date">
+                        <time datetime="2024-03">Mar. 2024</time> - <time datetime="2024-6">Jun. 2024</time> 
+                    </p>
+                </header>
+                
                 <ul>
-                    <li>Developed and maintained software applications.</li>
-                    <li>Collaborated with my teammates and made all the shareholders rich.</li>
-                    <li>Optimized the application to function before it is executed.</li>
+                    <li>Developed an LSTM-based machine learning model using Pytorch to predict the sentiment of a given audio that runs in real-time locally on Raspberry Pi Zero.</li>
+                    <li>Placed 2nd place in the quarterly project.</li>
                 </ul>
             </section>
 
             <section>
                 <header>
-                    <h3>Intern</h3>
+                    <h4>SIMULATING OPTIMIZERS FROM SCRATCH USING PYTHON</h4>
                 </header>
-                <p>Company: DataScienceCompany</p>
-                <time datetime="2019-01">January 2019</time> - <time datetime="2019-12">December 2019</time>
+                <p class="date">
+                    <time datetime="2024-03">Mar. 2024</time>
+                </p>
                 <ul>
-                    <li>Analyzed radiology data to improve diagnosis AI and decreased the false negative by 70%.</li>
-                    <li>Visualized findings and results to officials.</li>
-                    <li>Ate ice cream</li>
+                    <li>Researched and studied the evolution of optimizers and the larger intuition behind each method.</li>
+                    <li>Implemented the following optimizers for single input loss function: Gradient Descent, AdaGrad, RMSProp, AdaDelta, and Adam.</li>
+                    <li>Animated the optimization process of each optimizer on an arbitrary loss function using Matplotlib.</li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h4>INDEPENDENT RESEARCH IN LEARNING TO DETECT DEEPFAKES WITH FACIAL LANDMARKS</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2022-06">Jun. 2022</time>
+                </p>
+                <ul>
+                    <li>Experimented with the viability of using facial landmarks to detect deepfakes with large variations of approaches and hyperparameter combinations, obtaining significant results.</li>
+                    <li>Learned how to effectively display research approaches and results using diagrams as well as commonly used methods for them.</li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h4>INDEPENDENT RESEARCH IN IMAGE CLASSIFICATION WITH ARTIFICIAL INTELLIGENCE</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2022-04">Apr. 2022</time>
+                </p>
+                <ul>
+                    <li>Researched preprocessing methods for high-resolution images with various dimensions with limited computational power.</li>
+                    <li>Self-studied how to maximize the generality of a classification model with a limited dataset such as image augmentation.</li>
+                    <li>Researched further into the fundamentals of artificial neural networks and the process of creating models.</li>
+                    <li>Experienced the process of applying GPU into environments through the use of NVIDIA’s CUDA on my personal computer.</li>
+                    <li>Achieved validation accuracy of 95%.</li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h4>INDEPENDENT RESEARCH IN ARTIFICIAL INTELLIGENCE AND ITS APPLICATIONS IN PHYSICS</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2021-11">Nov. 2021</time> - <time datetime="2022-1">Jan. 2021</time> 
+                </p>
+                <ul>
+                    <li>Created simulations of mechanical interactions such as a ball bouncing with physics applied.</li>
+                    <li>Used the data generated to train an LSTM model to predict the next frame based on several consecutive frames.</li>
+                    <li>Utilized the trained model to complete the rest of a simulation based on the first few frames.</li>
                 </ul>
             </section>
         </article>
 
+
         <article>
             <header>
-                <h2>Skills</h2>
+                <h2 class="content">Extracurricular Activities & Leadership Experiences</h2>
             </header>
-            <ul>
-                <li>Programming Languages: Python, Java, Korean</li>
-                <li>Tools: Git</li>
-            </ul>
+            <section>
+                <header>
+                    <h4>Member, IEEE SUPERCOMPUTING</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2024-09">Sep. 2024</time> - Present
+                </p>
+                <ul>
+                    <li>Participated in the Student Cluster Competition as a helping member of the MLPerf team.</li>
+                    <li>Researched benchmark methods for text-to-image models such as Stable Diffusion XL.</li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h4>Founder & Co-leader, COMPUTER SCIENCE FOR BEGINNERS</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2021-10">Oct. 2021</time> - <time datetime="2023-5">May 2023</time>
+                </p>
+                <ul>
+                    <li>Taught middle and high school students about the computer science language Java to make CS more accessible for others.</li>
+                    <li>Grew the club to over 60+ members over the span of a year.</li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h4>Member, ISKL MATH CLUB</h4>
+                </header>
+                <p class="date">
+                    <time datetime="2024-10">Oct. 2019</time> - <time datetime="2023-5">May 2023</time>
+                </p>
+                <ul>
+                    <li>Practiced solving problems from the HighFour competition with three other team members and often placed in the top 5.</li>
+                    <li>Solved past problems from the American Mathematics Competition (AMC) 10 and 12 in preparation for the annual AMC.</li>
+                    <li>Learned and taught mathematics theorems appearing in the HighFour and AMC.</li>
+                </ul>
+            </section>
+        </article>
+
+
+        <article>
+            <header>
+                <h2 class="content">Skills</h2>
+            </header>
+            <table>
+                <tr>
+                    <td><li>Python (Pandas, Tensorflow, Pytorch)</li></td>
+                    <td><li>Java</li></td>
+                </tr>
+                <tr>
+                    <td><li>HTML, CSS</li></td>
+                    <td><li>Git</li></td>
+                </tr>
+            </table>
         </article>
     </main>
 </body>
