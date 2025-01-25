@@ -12,7 +12,7 @@ function $$(selector, context = document) {
 
 let pages = [
     { url: '', title: 'Home' },
-    { url: 'CV.html', title: 'CV' },
+    { url: 'CV/', title: 'CV' },
     { url: 'projects/', title: 'Projects' },
     { url: 'contact/', title: 'Contact' },
     { url: 'https://github.com/youngpark1516', title: 'GitHub' },
