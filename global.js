@@ -11,13 +11,13 @@ function $$(selector, context = document) {
 // currentLink?.classList.add("current");
 
 let pages = [
-    { url: '', title: 'Home' },
-    { url: 'CV.html', title: 'CV' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'contact/', title: 'Contact' },
+    { url: './', title: 'Home' },
+    { url: './CV.html', title: 'CV' },
+    { url: './projects/', title: 'Projects' },
+    { url: './contact/', title: 'Contact' },
     { url: 'https://github.com/youngpark1516', title: 'GitHub' },
 ];
-
+  
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
