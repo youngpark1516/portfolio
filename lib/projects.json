@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Human-Robot Interaction Research",
+      "year": "2025",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about investigating how humans and robots can collaborate effectively in dynamic environments."
+    },
+    {
+      "title": "Smart Home Energy Management System",
+      "year": "2024",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about developing an AI-driven system to optimize energy consumption in smart homes."
+    },
+    {
+      "title": "IEEE Quarterly Group Project - Speech Sentiment Analysis",
+      "year": "2024",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about developing a real-time sentiment analysis system for audio inputs using an LSTM-based machine learning model built with PyTorch, deployed locally on a Raspberry Pi Zero."
+    },
+    {
+      "title": "Simulating Optimizers from Scratch Using Python",
+      "year": "2024",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about researching and implementing various optimization algorithms, including Gradient Descent, AdaGrad, RMSProp, AdaDelta, and Adam, while visualizing their performance on arbitrary loss functions."
+    },
+    {
+      "title": "Virtual Reality for Mental Health Therapy",
+      "year": "2023",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about exploring the use of virtual reality environments to support mental health treatment and therapeutic experiences."
+    },
+    {
+      "title": "Quantum Computing for Cryptography",
+      "year": "2023",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about exploring the potential of quantum computing to enhance cryptographic protocols."
+    },
+    {
+      "title": "Blockchain for Secure Supply Chains",
+      "year": "2022",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about implementing blockchain technology to enhance transparency and security in global supply chains."
+    },
+    {
+      "title": "Independent Research in Image Classification with Artificial Intelligence",
+      "year": "2022",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about investigating preprocessing techniques for high-resolution images and methods for enhancing model generalization with limited datasets, culminating in a functional image classification model."
+    },
+    {
+      "title": "Independent Research in Learning to Detect Deepfakes with Facial Landmarks",
+      "year": "2022",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about exploring the effectiveness of using facial landmarks as features for detecting deepfakes, analyzing different modeling approaches and hyperparameter configurations to evaluate their viability."
+    },
+    {
+      "title": "Independent Research in Artificial Intelligence and Its Applications in Physics",
+      "year": "2021",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about simulating mechanical interactions and training an LSTM model to predict future frames in dynamic systems, enabling the completion of simulations based on partial input data."
+    },
+    {
+      "title": "Autonomous Drone Navigation System",
+      "year": "2021",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about designing an AI-based navigation system for drones to operate autonomously in complex environments."
+    },
+    {
+      "title": "AI-Powered Agriculture Optimization",
+      "year": "2020",
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "This project is about developing machine learning models to optimize crop yield predictions and irrigation strategies."
+    }
+]

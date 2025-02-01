@@ -133,3 +133,18 @@ body {
     margin-left: 0.5rem;
   }
   
+
+  #profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+    font-weight: bold;
+    grid-row: 1;
+}
+
+#profile-stats dd {
+    grid-row: 2;
+    margin: 0;
+}
