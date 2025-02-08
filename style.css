@@ -158,6 +158,13 @@ body {
 
 }
 
+.searchBar {
+  width: 100%; 
+  padding: 0.5em; 
+  font-size: 1em; 
+  margin-bottom: 1.5em;
+}
+
 #projects-pie-plot {
   max-width: 20em;
   margin-block: 2em;
