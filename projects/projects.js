@@ -12,17 +12,6 @@ if (projects.length > 0) {
 
 
 let selectedIndex = -1;
-let query = '';
-let filteredProjects = [...projects];
-
-function updateFilteredProjects() {
-    filteredProjects = projects.filter(p => {
-        let matchesYear = (selectedIndex === -1) || (p.year === projects[selectedIndex].year);
-        let matchesSearch = query === '' || Object.values(p).join('\n').toLowerCase().includes(query.toLowerCase());
-        return matchesYear && matchesSearch;
-    });
-    renderProjects(filteredProjects, projectsContainer, 'h2');
-}
 
 function renderPieChart(projectsGiven) {
     // re-calculate rolled data
@@ -60,20 +49,18 @@ function renderPieChart(projectsGiven) {
                 .attr("class", (_, idx) => (
                     selectedIndex === idx ? "selected" : ""
                 ));
-                // let filteredProjects = selectedIndex === -1
-                // ? projects
-                // : projects.filter(p => p.year === d.data.label);
+                let filteredProjects = selectedIndex === -1
+                ? projects
+                : projects.filter(p => p.year === d.data.label);
 
-                // renderProjects(filteredProjects, projectsContainer, 'h2');
-
+                renderProjects(filteredProjects, projectsContainer, 'h2');
+                
                 legend
                 .selectAll('li')
                 .attr('class', (_, idx) => (
                     selectedIndex === idx ? "selected" : ""
         
                 ));
-
-                updateFilteredProjects(); 
             });
     }); 
 
@@ -89,19 +76,17 @@ function renderPieChart(projectsGiven) {
 }
 
 renderPieChart(projects);
-renderProjects(projects, projectsContainer, 'h2');
+renderProjects(projects)
 
+let query = '';
 let searchInput = document.querySelector('.searchBar');
 searchInput.addEventListener('input', (event) => {
-    query = event.target.value;
-//   let filteredProjects = projects.filter((project) => {
-//     let values = Object.values(project).join('\n').toLowerCase();
-//     return values.includes(query.toLowerCase());
-//   });
-//   renderProjects(filteredProjects, projectsContainer, 'h2');
-//   renderPieChart(filteredProjects);
-    updateFilteredProjects(); 
+  query = event.target.value;
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+  renderPieChart(filteredProjects);
 });
-
-
 
