@@ -49,9 +49,13 @@ function renderPieChart(projectsGiven) {
                 .attr("class", (_, idx) => (
                     selectedIndex === idx ? "selected" : ""
                 ));
-                let filteredProjects = selectedIndex === -1
-                ? projects
-                : projects.filter(p => p.year === d.data.label);
+                let filteredProjects = projects.filter(p => {
+                    let matchesYear = selectedIndex === -1 || p.year === d.data.label;
+                    let values = Object.values(p).join('\n').toLowerCase();
+                    let matchesSearch = values.includes(query.toLowerCase());
+                    return matchesYear && matchesSearch;
+                  });
+                  
 
                 renderProjects(filteredProjects, projectsContainer, 'h2');
                 
