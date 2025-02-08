@@ -148,3 +148,65 @@ body {
     grid-row: 2;
     margin: 0;
 }
+
+
+.project-year {
+  font-style: italic;
+  font-family: "Baskerville", serif;
+  font-variant-numeric: oldstyle-nums;
+  font-size: 1em;
+
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 2em auto;
+}
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.swatch {
+  width: 15px;
+  height: 15px;
+  background-color: var(--color);
+  border-radius: 50%; 
+  display: inline-block;
+}
+
+:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
