@@ -1,8 +1,4 @@
 - name: Checkout
-  permissions:
-    contents: write
-    pages: write
-    id-token: write
 
   uses: actions/checkout@v4
   with:
@@ -13,6 +9,11 @@
     npx elocuent -d . -o meta/loc.csv
 
 - name: Commit and Push
+  permissions:
+    contents: write
+    pages: write
+    id-token: write
+
   run: |
     git config --local user.email "action@github.com"
     git config --local user.name "GitHub Action"
