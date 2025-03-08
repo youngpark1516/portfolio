@@ -14,8 +14,18 @@
     <div id="stats"></div>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
 
+    <div id="chart-container">
+      <div id="filter-ui">
+          <label id="commitSliderLabel">
+              Show commits until:
+              <input type="range" id="timeSlider" min="0" max="100" value="100">
+          </label>
+          <time id="selectedTime"></time>
+      </div>
+      <div id="chart"></div>
+  </div>
+  
     <dl id="commit-tooltip" class="info tooltip">
         <dt>Commit</dt>
         <dd>
